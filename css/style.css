@@ -6,7 +6,7 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?nature,landscape');
+    /* background-image: url('https://source.unsplash.com/1600x900/?nature,landscape'); */
     font-size: 120%;
 }
 
@@ -20,12 +20,15 @@ body{
     margin: 1em;
 }
 
-
 .search{
     display: flex;
     align-items: center;
     justify-content: center;
 } 
+
+.hreflink{
+    text-decoration: none;
+}
 
 button {
     margin: 0.5em;
@@ -61,8 +64,28 @@ h1.temp {
     margin-bottom: 0.4em;    
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
 
 .description{
     text-transform: capitalize;
-    margin-left: 10px;
+    margin-left: 8px;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+     
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }

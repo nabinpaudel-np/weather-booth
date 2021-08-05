@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,600&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body> 
     <div class="card">
@@ -20,17 +20,23 @@
                 </svg>
             </button>
         </div>
-        <div class="weather">
+        <div class="weather loading">
             <h2 class="city">Weather in Kathmandu</h2>
             <h1 class="temp">51&#176;C</h1>
-            <img src="" alt="" class="icon"/>
-            <div class="description">Cloudy</div>
+            <div class="flex">
+                <img src="" alt="" class="icon"/>
+                <div class="description">Cloudy</div>
+            </div>
             <div class="humidity">Humidity: 60%</div>
             <div class="wind">Wind Speed: 6.2 KMpH</div>
         </div>
+
+        <br>
+
+        <a class="hreflink" href="https://www.figma.com/file/zY29c3mo8uIpZ0rSEbPwOM/Weather-Booth?node-id=0%3A1"> Planning for next Iteration of the website with new design system for  adding more functionality</a>
+
     </div>
 
-    <a href="http://api.openweathermap.org/data/2.5/weather?q=kathmandu&appid=9de75284016a6cecfeaa66d0f3fef268" target="_blank">API Call</a>
 
 </body>
 </html>
